@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../component/card'
+import Card from '../component/Card'
 import image1 from "../assets/image1.jpg"
 import image2 from "../assets/image2.jpg"
 
