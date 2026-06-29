@@ -1,5 +1,5 @@
 import React from 'react'
-import bg from '../assets/authBg.png'
+import bg from '../assets/authbg.png'
 import { IoMdEye } from "react-icons/io";
 import { IoMdEyeOff } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
