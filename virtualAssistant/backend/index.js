@@ -11,7 +11,7 @@ import userRouter from './Routes/user.routes.js'
 
 const app = express()
 app.use(cors({
-  origin: "https://virtualassistant-foln.onrender.com",
+  origin: "https://saarthi-ai-ak.onrender.com",
   credentials: true
 }));
 app.use(cookieParser())
