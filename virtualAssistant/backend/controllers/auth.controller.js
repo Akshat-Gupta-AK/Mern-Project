@@ -22,8 +22,8 @@ export const Signup = async (req, res) => {
          res.cookie("token", token, {
             httpOnly: true,
             maxAge: 10 * 24 * 60 * 60 * 1000, // 10 days
-            sameSite:"lax",
-            secure:false,
+            sameSite:"None",
+            secure:true,
             path:"/"
 
         });
@@ -52,8 +52,8 @@ export const Login = async (req, res) => {
         res.cookie("token", token, {
             httpOnly: true,
             maxAge: 10 * 24 * 60 * 60 * 1000, // 10 days
-            sameSite: "strict",
-            secure: false
+              sameSite:"None",
+            secure:true
         });
         return res.status(200).json({ message: "Login successful", token });
     } catch (error) {
