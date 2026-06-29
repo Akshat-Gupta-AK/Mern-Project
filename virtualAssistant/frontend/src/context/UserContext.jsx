@@ -5,7 +5,7 @@ import axios from 'axios';
 
 
 function UserContext({children}) {
-  const serverurl="https://virtualassistant-backend-kcbw.onrender.com"
+  const serverurl="https://saarthi-ai-backend-akgm.onrender.com"
   const [userData,setUserData]=useState(null)
   const[frontendImages,setfrontendImages]=useState(null)
   const[backendImages,setbackendImages]=useState(null)
