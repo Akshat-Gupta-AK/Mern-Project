@@ -66,12 +66,17 @@ export const askToAssistant=async (req,res)=>{
                userInput:gemResult.userInput,
                response:`current date is ${moment().format("YYYY-MM-DD")}`
             });
-            case 'get-time':
-                return res.json({
-               type,
-               userInput:gemResult.userInput,
-               response:`current time is ${moment().format("hh:mm A")}`
-            });
+           case 'get-time':
+    return res.json({
+        type,
+        userInput: gemResult.userInput,
+        response: `Current time is ${new Date().toLocaleTimeString("en-IN", {
+            timeZone: "Asia/Kolkata",
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: true,
+        })}`
+    });
              case 'get-day':
                 return res.json({
                type,
